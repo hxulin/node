@@ -2,8 +2,6 @@
 #
 # Customized Node.js installer script, include yarn, pm2, nrm
 
-set -e
-
 # 设置默认安装目录
 install_dir=/usr/local/node-v12.18.4
 
@@ -38,6 +36,9 @@ export NODE_HOME=$install_dir
 export PATH=\$NODE_HOME/bin:\$PATH
 EOF
 
+export NODE_HOME=$install_dir
+export PATH=$NODE_HOME/bin:$PATH
+
 echo Customized Node.js installation is complete.
 echo "It's include yarn, pm2, nrm"
 echo Check the detail information, you can enter:
@@ -48,5 +49,3 @@ echo yarn -v
 echo pm2 -v
 echo nrm -V
 echo Thanks for using, goodbye.
-
-exit 0

@@ -17,7 +17,9 @@
 Linux 一键安装命令：
 
 ```bash
-curl https://cdn.jsdelivr.net/gh/hxulin/node/12.18.4/install.sh | bash && source /etc/profile
+source <(curl http://cdn.huangxulin.cn/node/12.18.4/install.sh)
+# OR
+source <(curl https://cdn.jsdelivr.net/gh/hxulin/node/12.18.4/install.sh)
 ```
 
 默认安装目录为：/usr/local/node-v12.18.4
@@ -25,7 +27,9 @@ curl https://cdn.jsdelivr.net/gh/hxulin/node/12.18.4/install.sh | bash && source
 若需要指定安装目录，可以使用 --prefix 参数：
 
 ```bash
-bash <(curl https://cdn.jsdelivr.net/gh/hxulin/node/12.18.4/install.sh) --prefix=/opt/nodejs && source /etc/profile
+source <(curl http://cdn.huangxulin.cn/node/12.18.4/install.sh) --prefix=/opt/node-v12.18.4
+# OR
+source <(curl https://cdn.jsdelivr.net/gh/hxulin/node/12.18.4/install.sh) --prefix=/opt/node-v12.18.4
 ```
 
 查看是否安装成功：
