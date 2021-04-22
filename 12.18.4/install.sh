@@ -35,9 +35,7 @@ cat << EOF >> /etc/profile
 export NODE_HOME=$install_dir
 export PATH=\$NODE_HOME/bin:\$PATH
 EOF
-
-export NODE_HOME=$install_dir
-export PATH=$NODE_HOME/bin:$PATH
+source /etc/profile
 
 echo Customized Node.js installation is complete.
 echo "It's include yarn, pm2, nrm"
